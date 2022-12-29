@@ -36,25 +36,18 @@ class MediaContainer extends StatelessWidget {
           ],
         );
       case MediaType.image:
-        return TextContainer(
-          isOwnMessage: isOwnMessage,
-          messageOptions: messageOptions,
-          message: message,
-          messageTextBuilder: (ChatMessage m, ChatMessage? p, ChatMessage? n) {
-            return Stack(
-              alignment: AlignmentDirectional.bottomEnd,
-              children: <Widget>[
-                Image(
-                  height: height,
-                  width: width,
-                  fit: BoxFit.cover,
-                  alignment: isOwnMessage ? Alignment.topRight : Alignment.topLeft,
-                  image: getImageProvider(media.url),
-                ),
-                if (media.isUploading) loading
-              ],
-            );
-          },
+        return Stack(
+          alignment: AlignmentDirectional.bottomEnd,
+          children: <Widget>[
+            Image(
+              height: height,
+              width: width,
+              fit: BoxFit.cover,
+              alignment: isOwnMessage ? Alignment.topRight : Alignment.topLeft,
+              image: getImageProvider(media.url),
+            ),
+            if (media.isUploading) loading
+          ],
         );
       default:
         return TextContainer(
