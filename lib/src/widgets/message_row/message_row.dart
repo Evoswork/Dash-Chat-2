@@ -62,7 +62,7 @@ class MessageRow extends StatelessWidget {
       isNextSameAuthor = true;
     }
     return Padding(
-      padding: EdgeInsets.only(top: isPreviousSameAuthor ? 16 : 22),
+      padding: EdgeInsets.only(top: isPreviousSameAuthor ? 0 : 0),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.end,
         mainAxisAlignment:
