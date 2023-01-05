@@ -62,19 +62,19 @@ class TextContainer extends StatelessWidget {
               borderTopLeft:
                   isPreviousSameAuthor && !isOwnMessage && !isAfterDateSeparator
                       ? 0.0
-                      : 18.0,
+                      : 10.0,
               borderTopRight:
                   isPreviousSameAuthor && isOwnMessage && !isAfterDateSeparator
                       ? 0.0
-                      : 18.0,
+                      : 10.0,
               borderBottomLeft:
                   !isOwnMessage && !isBeforeDateSeparator && isNextSameAuthor
                       ? 0.0
-                      : 18.0,
+                      : 10.0,
               borderBottomRight:
                   isOwnMessage && !isBeforeDateSeparator && isNextSameAuthor
                       ? 0.0
-                      : 18.0,
+                      : 10.0,
             ),
       padding: messageOptions.messagePadding ?? const EdgeInsets.all(11),
       child: messageTextBuilder != null
