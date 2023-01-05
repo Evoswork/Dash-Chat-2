@@ -5,7 +5,7 @@ class DefaultDateSeparator extends StatelessWidget {
   const DefaultDateSeparator({
     required this.date,
     this.messageListOptions = const MessageListOptions(),
-    this.padding = const EdgeInsets.symmetric(vertical: 20),
+    this.padding = const EdgeInsets.symmetric(vertical: 0),
     this.textStyle = const TextStyle(color: Colors.grey),
     Key? key,
   }) : super(key: key);
